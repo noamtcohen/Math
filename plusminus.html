@@ -8,10 +8,14 @@
 		<script>
 			$(function () {
 				setInterval(function(){
-					var q = R(0,10).toString() + " " + (R(0,1)==0?"-":"+") + " " + R(0,10).toString() + " =";
+					var a = R(0,10);
+					var b = R(0,10);
+					
+					var q = a.toString() + " + " + b.toString() + " =";
 					//$("#math").html(q);
 					alert(q);
-				},3000);
+					alert(a+b);
+				},0);
 			});
 
 			/**
